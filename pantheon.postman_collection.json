@@ -1,0 +1,150 @@
+{
+	"info": {
+		"_postman_id": "6decce27-2019-49d7-80e1-560307347fd5",
+		"name": "pantheon",
+		"description": "GET Deities - Get a simplified list of all deities available on the database.\n\nGet Deity by id - Get a complete description of a single deity whose id is specified in the request URL.\n\nDELETE Deity by id - Delete a deity from the database whose id is specified in the request URL.\n\nPOST Deity - Add a new deity to the database. Deity information is specified in the body of the request as a JSON object.\n\nPUT Deity by id - Update a single deity on the database whose id is specified in the request URL. The information to update is specified in the body of the request as a JSON object.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET Deities",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/deity",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"deity"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Deity by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/deity/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"deity",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE Deity by id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/deity/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"deity",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Deity",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\t\"id\": \"3\",\r\n\t\t\"name\": \"Dubby Ball\",\r\n\t\t\"cover\": \"image.jpg\",\r\n\t\t\"gallery\": [],\r\n\t\t\"headers\": [\"General\", \"Connection to VTC\", \" \", \"Attributes\", \" \", \" \"],\r\n\t\t\"descriptions\": \r\n\t\t[\r\n\t\t\t\"Dubby Ball (A.K.A. [DATA EXPUNGED]), is a dark green spiky moss ball of radius 22cm. Many aspects of Dubby remain undetermined, such as their age and supposed nationality. Dubby is the second earliest known member of the VTC next to Cocoa.\",\r\n\t\t\t\r\n\t\t\t\"Until very recently, Dubby was thought to be the first VTC deity. This was attributed to the first known letter sent within the VTC: a single letter 'E'. Testimonials from other VTC deities (specifically Cocoa, Pixel, and Dubby themselves) point to Dubby being directly involved in the creation of the VTC. Some even claim the VTC was created solely by Dubby. This theory has been debated (see L S), but has yet to be debunked entirely by the greater academic community.\",\r\n\t\t\t\r\n\t\t\t\"Dubby has revealed that the VTC has greatly impacted their life, partly due to their involvement in the historical 'Tale of the Blizzargarasu', an era of the VTC involving the appeasement of an abnormally-sized bird who brought with him a never-ending winter. The legitimacy of this tale is still debated among the academic community, though many VTC deities (particularly Dubby, Sunda, and Cocoa) recall the time fondly as a brutal but ultimately positive experience in their lives which helped them learn to overcome hardship. Dubby is also grateful simply for the chance to be a part of the VTC. Experts have used this sentiment to theorize about a possible 'entrance criteria' for entering the VTC. If proven true, this criteria would not only explain the seemingly random rate at which deities appear in the VTC, but it would also provide evidence that other fabrics exist (as having entrance criteria wouldn't make sense if there wasn't anywhere else to go).\",\r\n\t\t\t\r\n\t\t\t\"Within the VTC, Dubby is most well-known to having extreme body coordination. More recent studies have qualified Dubby's coordination to that of a gold medal Olympic athlete, but only with regards to specific motor abilities (such as finger and arm movement). Despite being a mere moss ball, Dubby has shown to have an impressive resistance to repeated-stimulation injuries, attacks on their character, and even traumatic experiences. Unlike most other VTC deities, Dubby has suffered a great deal of loss in their life; they are constantly working hard to overcome the challenges that life has brought them. From a functionalist perspective, this gives Dubby's support group within the VTC a purpose: to help overcome life experiences. They are the only such deity with an easily-explainable tie to other deities.\",\r\n\t\t\t\r\n\t\t\t\"Dubby has also been noted as being a competent writer. Most of Dubby's writings take the form of a personal stream of consciousness which they then share with other VTC deities. However, the creation of these writings is rather inconsistent. Sometimes multiple writings are created in a single day. Sometimes multiple weeks can go by before Dubby creates another entry. All of these entires are either sent to VTC members directly or stored in a virtual journal. The content of these writings varies from day-to-day happenings to extremely personal pent-up feelings.\",\r\n\t\t\t\r\n\t\t\t\"It is also important to note Dubby's connection with the song 'Solar Wind' by Jumper. This song has long been associated with Dubby on the VTC, though the significance of this song is much more than a mere association. Depending on the song's usage (e.g. who plays it, where it's being played, when it's played, etc.), 'Solar Wind' can elicit a multitude of different emotional responses from Dubby. Such emotions include (but are not limited to): happiness, melancholic sadness, relaxation, extreme stress (akin to a fight or flight response), and anger. No other VTC deity has been shown to exhibit as strong a reaction to the song as Dubby has. In fact, a few documented incidents report that, upon rolling into various rooms within the VTC, 'Solar Wind' begins playing from a seemingly nonexistent source. The sound emanates from Dubby for a duration of five to fifteen seconds. The timing and relevance of these random outbursts is not well understood, though a tenuous link between the song's occurrence and Dubby's desire to be comedic has been made. More research needs to be done in order to make any substantial conclusions.\"\r\n\t\t],\r\n\t\t\"rating\": \"0\",\r\n\t\t\"dateModified\": \"2022/03/26\"\r\n\t}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/deity/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"deity",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT Deity by id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"scares hexagon man funny\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/deity/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"deity",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
