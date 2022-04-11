@@ -11,4 +11,6 @@ The repo also contains a Postman collection which you can use to test the api's 
 Once a database has been specified, navigate to the api folder and start up the webservice ("node pantheon_server.js").
 Then, navigate to the app folder and start up the app ("npm run serve").
 
+The Node webservice runs on port 5000 by default, while the Vue app runs on port 8080 by default.
+
 Check out the GitHub wiki to see more details about the database schema and how to use it. The app itself also contains usage into on the "About" page.
